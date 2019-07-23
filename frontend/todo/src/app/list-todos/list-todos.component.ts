@@ -21,7 +21,7 @@ export class ListTodosComponent implements OnInit {
   todos = [
     new Todo(1, 'Learn Python', false, new Date()),
     new Todo(2, 'Update Resume', false, new Date()),
-    new Todo(3, 'Learn Jave', false, new Date())
+    new Todo(3, 'Learn Java', false, new Date())
   ]
   constructor() { }
 
