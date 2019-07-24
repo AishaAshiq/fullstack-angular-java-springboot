@@ -8,8 +8,9 @@ export class WelcomeDataService {
 
   constructor(private httpClient: HttpClient) { }
 
-  executeHelloWorldService(){
-    return this.httpClient.get('http://localhost:8080/hello-world-bean');
+  executeHelloWorldService(name){
+    return this.httpClient.get(`http://localhost:8080/hello-world/path-variable/${name}`);
+   // return this.httpClient.get('http://localhost:8080/hello-world-bean/');
     //console.log("Execute Hello World Service")
   }
 }
